@@ -6,7 +6,7 @@
 
 body {
     background : #fff;
-    font-family: 'Sarabun', sans-serif;
+    font-family: "Sarabun", sans-serif;
     font-size  : 16px;
 }
 
@@ -77,12 +77,10 @@ header .contenedor-texto .texto .profesion {
     line-height: 25px;
 }
 
-
 /*------------------------MAIN------------------------*/
 
 .main .contenedor {
     overflow: visible;
-
 }
 
 .main .acerca-de {
@@ -121,7 +119,6 @@ header .contenedor-texto .texto .profesion {
     color          : #3895ea;
     text-decoration: underline;
 }
-
 
 .main .trabajos {
     background: #f2f2f2;
@@ -220,7 +217,6 @@ footer .contacto .formulario textarea:focus {
     border: 2px solid #3895ea;
 }
 
-
 footer .contacto .formulario input[type="text"],
 footer .contacto .formulario input[type="email"] {
     width        : 49%;
@@ -253,25 +249,61 @@ footer .contacto .formulario .boton:hover {
 
 footer .redes-sociales {
     background: #1e2b38;
-    padding: 60px 0;
+    padding   : 60px 0;
 }
 
 footer .redes-sociales .contenedor {
-    display: flex;
+    display        : flex;
     justify-content: center;
 }
 
 footer .redes-sociales a {
-    color: #fff;
-    text-align: center;
-    width: 100px;
-    display: block;
-    padding: 15px 0;
+    color        : #fff;
+    text-align   : center;
+    width        : 100px;
+    display      : block;
+    padding      : 15px 0;
     border-radius: 3px;
-    font-size: 30px;
-    margin: 0 20px ;
+    font-size    : 30px;
+    margin       : 0 20px;
 }
 
-footer .redes-sociales .instagram:hover {background: #833ab4;}
-footer .redes-sociales .github:hover {background: #4078c0;}
-footer .redes-sociales .linkedin:hover {background: #0077b5;}
+footer .redes-sociales .instagram:hover {
+    background: #833ab4;
+}
+
+footer .redes-sociales .github:hover {
+    background: #4078c0;
+}
+
+footer .redes-sociales .linkedin:hover {
+    background: #0077b5;
+}
+
+/* ------------------ MEDIA QUERIES ------------------*/
+@media screen and (max-width: 800px) {
+    header .menu {
+        text-align: center;
+    }
+
+    .main .trabajos .contenedor-trabajos .trabajo {
+        width: 46%;
+    }
+}
+
+@media screen and (max-width: 500px) {
+    header .contenedor-texto .texto .nombre {
+        font-size: 35px;
+    }
+
+    header .contenedor-texto .texto .profesion {
+        font-size: 18px;
+    }
+    footer .redes-sociales {
+        padding: 10px 0;
+    }
+    footer .redes-sociales .contenedor {
+        flex-wrap: wrap;
+        padding: 20px 0;
+    }
+}
